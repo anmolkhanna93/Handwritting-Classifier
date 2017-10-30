@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Draw Vc-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DrawVc" customModule="handwrittingRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L21-0b-vCD">
+                                <rect key="frame" x="0.0" y="68" width="375" height="375"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L21-0b-vCD" secondAttribute="height" multiplier="1:1" id="OqO-RT-s2c"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tap the Predict Button !!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dud-NH-Kz1">
+                                <rect key="frame" x="74" y="481" width="226" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FEo-Xf-VMx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.6015353394361227" blue="0.19159592154917371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Digit Predictor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJd-Aw-wm4">
+                                <rect key="frame" x="104" y="8" width="169" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.22489304968233237" blue="0.22484755951183155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klu-ix-WRX">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" red="1" green="0.22405290111752785" blue="0.23083103104786751" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="80G-E8-EtC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="fAo-Xv-eZs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Predict">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="predictBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roC-E8-aff"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dud-NH-Kz1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="160-Wi-T5T"/>
+                            <constraint firstAttribute="trailing" secondItem="L21-0b-vCD" secondAttribute="trailing" id="2Lx-2f-2gH"/>
+                            <constraint firstAttribute="trailing" secondItem="klu-ix-WRX" secondAttribute="trailing" id="90I-LT-Bvq"/>
+                            <constraint firstItem="L21-0b-vCD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="F8Q-c6-xta"/>
+                            <constraint firstItem="klu-ix-WRX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KkX-mP-14Q"/>
+                            <constraint firstItem="dJd-Aw-wm4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T9q-xP-RP6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="klu-ix-WRX" secondAttribute="bottom" id="VFv-If-5F8"/>
+                            <constraint firstItem="klu-ix-WRX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vdp-FT-HLb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dud-NH-Kz1" secondAttribute="trailing" constant="30" id="bTI-22-pHZ"/>
+                            <constraint firstItem="Dud-NH-Kz1" firstAttribute="top" secondItem="L21-0b-vCD" secondAttribute="bottom" constant="30" id="fXn-IW-NT9"/>
+                            <constraint firstAttribute="trailing" secondItem="klu-ix-WRX" secondAttribute="trailing" id="l1p-ti-JmU"/>
+                            <constraint firstItem="L21-0b-vCD" firstAttribute="top" secondItem="dJd-Aw-wm4" secondAttribute="bottom" constant="50" id="vp8-he-jCR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drawingImageView" destination="L21-0b-vCD" id="adM-cY-mmX"/>
+                        <outlet property="predictionLabel" destination="Dud-NH-Kz1" id="JFI-zy-diW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-743" y="-75"/>
+        </scene>
+    </scenes>
+</document>
