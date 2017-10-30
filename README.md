@@ -4,4 +4,6 @@ Designed and implemented the CNN model for classifying handwritten characters in
 
 Also, Built an iOS application where users can draw any characters on the screen and get the predicted result. The application uses the above mentioned neural net model using the CoreML and Vision libraries.
 
+# Application Walkthrough 
+
 ![alt tag](https://github.com/anmolkhanna93/Handwritting-Classifier/blob/master/Classifier.gif)
